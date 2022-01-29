@@ -14,22 +14,37 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zilla+Slab&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Map-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/untitled-1.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
 <body>
-    <header class="masthead" style="background: url(&quot;assets/img/Screen%20Shot%202021-12-09%20at%2011.11.09%20AM.png&quot;);">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarResponsive"><span class="navbar-text action-button" href="#"> <a class="btn btn-primary border rounded-pill action-button" role="button" href="#" style="color: #292161;background: rgba(255,255,255,0.58);padding: 10px 25px;font-size: 20px;margin: 0px 10px 0px 0px;">中文</a><a class="btn btn-primary border rounded-pill action-button" role="button" href="#" style="color: rgb(255,255,255);background: #292161;padding: 10px 25px;font-size: 20px;font-family: 'Zilla Slab', serif;font-weight: bold;">ENG</a></span>
+                <div class="dropdown ms-auto" style="width: 133.1562px;"><a class="dropdown-toggle text-center" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="background: rgba(41,33,97,0);color: rgb(255,255,255);font-size: 20px;font-family: 'Zilla Slab', serif;font-weight: bold;text-align: center;">MENU&nbsp;</a>
+                    <div class="dropdown-menu dropdown-menu-dark"><a class="dropdown-item" href="index.html" style="font-family: 'Zilla Slab', serif;font-size: 18px;font-weight: bold;">Home</a><a class="dropdown-item" href="method.html" style="font-family: 'Zilla Slab', serif;font-size: 18px;font-weight: bold;">Method</a><a class="dropdown-item" href="about.html" style="font-family: 'Zilla Slab', serif;font-size: 18px;font-weight: bold;">About</a></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background: url(&quot;assets/img/mainpage_header.png&quot;);">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto position-relative" style="width: 813.984px;">
                     <div class="site-heading">
                         <h1 style="font-size: 72px;font-family: Zilla Slab;color: rgb(255,255,255);">How did COVID-19 Impact your city?</h1>
-                        <div></div><span class="subheading" style="font-family: Zilla Slab Highlight;font-size: 36px;">Visualizing human mobility during the COVID-19 lockdown</span>
-                        <p style="text-align: left;">COVID-19 pandemic has let governments around the world to impose lockdowm measures that restricts citizens mobility with the hope of decreasing the likelihood of spreading the diseases. The private sector and schools also introduced remote working and learning to reduce the spread of the virus in close indoor venues, such as offices and classroom. How effective are these measures? How much mobility reduction occurred due to the enacted policy? This website aims to use data from different sources (Location History, Seismic Records, Transportation Nodes) to visualize the reduction in mobility throughout the COVID-19 pandemic.</p>
+                        <div></div><span class="subheading" style="font-family: Zilla Slab Highlight;font-size: 36px;"><strong>Visualizing human mobility during the COVID-19 lockdown</strong></span>
+                        <p style="text-align: justify;">COVID-19 pandemic has let governments around the world to impose lockdowm measures that restricts citizens mobility with the hope of decreasing the likelihood of spreading the diseases. The private sector and schools also introduced remote working and learning to reduce the spread of the virus in close indoor venues, such as offices and classroom. How effective are these measures? How much mobility reduction occurred due to the enacted policy? This website aims to use data from different sources (Location History, Seismic Records, Transportation Nodes) to visualize the reduction in mobility throughout the COVID-19 pandemic.</p>
                     </div>
                 </div>
             </div>
@@ -54,42 +69,61 @@
                             </div>
                         </div>
                         <div class="row" style="text-align: center;">
-                            <div class="col d-xl-flex justify-content-xl-center" style="height: 396px;">
-                                <div class="card">
-                                    <div><img class="order-last" style="height: 363px;width: 454px;margin: 0;" src="assets/img/Screen%20Shot%202021-12-09%20at%2011.40.23%20AM.png"></div>
-                                    <div class="card-img-overlay d-md-flex justify-content-md-center" style="height: 363px;background: rgba(255,255,255,0);">
-                                        <h1 class="order-first" style="margin: 0;width: 420px;color: var(--bs-white);font-size: 96px!important;text-align: center;padding: 100px 0px 0px;height: 333px;">TAIPEI</h1>
-                                    </div>
-                                </div>
+                            <div class="col d-xl-flex justify-content-xl-center" style="height: 381px;">
+                                <div class="card" data-bss-hover-animate="pulse" href="taipei.index" style="border-style: hidden;"><a href="taipei.html">
+                                        <div><img class="order-last" style="height: 363px;width: 454px;margin: 0;" src="assets/img/taipei.png"></div>
+                                        <div class="card-img-overlay d-md-flex justify-content-md-center" style="height: 363px;background: rgba(255,255,255,0);">
+                                            <h1 class="order-first" style="margin: 0;width: 420px;color: var(--bs-white);font-size: 96px!important;text-align: center;padding: 100px 0px 0px;height: 333px;">TAIPEI</h1>
+                                        </div>
+                                    </a></div>
+                            </div>
+                            <div class="col" style="height: 381px;">
+                                <div class="card" data-bss-hover-animate="pulse" style="border-style: hidden;"><a href="taipei.html">
+                                        <div><img class="order-last" style="height: 363px;width: 454px;margin: 0;" src="assets/img/hsinchu.png"></div>
+                                        <div class="card-img-overlay d-md-flex d-xl-flex justify-content-md-center justify-content-xl-center" style="height: 363px;background: rgba(255,255,255,0);border-style: none;">
+                                            <h1 class="order-first" style="margin: 0;width: 420px;color: var(--bs-white);font-size: 80px!important;text-align: center;padding: 111px 0px 0px;height: 333px;">HSINCHU</h1>
+                                        </div>
+                                    </a></div>
                             </div>
                             <div class="col">
-                                <div class="card">
-                                    <div><img class="order-last" style="height: 363px;width: 454px;margin: 0;" src="assets/img/Screen%20Shot%202021-12-09%20at%2011.34.40%20PM.png"></div>
-                                    <div class="card-img-overlay d-md-flex d-xl-flex justify-content-md-center justify-content-xl-center" style="height: 363px;background: rgba(255,255,255,0);">
-                                        <h1 class="order-first" style="margin: 0;width: 420px;color: var(--bs-white);font-size: 80px!important;text-align: center;padding: 111px 0px 0px;height: 333px;">HSINCHU</h1>
+                                <div class="row" style="text-align: center;">
+                                    <div class="col d-xl-flex justify-content-xl-center" style="height: 381px;">
+                                        <div class="card" data-bss-hover-animate="pulse" style="border-style: hidden;"><a href="taipei.html">
+                                                <div><img class="order-last" style="height: 363px;width: 454px;margin: 0;" src="assets/img/taichung.png"></div>
+                                                <div class="card-img-overlay d-md-flex justify-content-md-center" style="height: 363px;background: rgba(255,255,255,0);">
+                                                    <h1 class="order-first" style="margin: 0;width: 420px;color: var(--bs-white);font-size: 77px!important;text-align: center;padding: 111px 0px 0px;height: 333px;">TAICHUNG</h1>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                    <div class="col" style="height: 381px;">
+                                        <div class="card" data-bss-hover-animate="pulse" style="border-style: hidden;"><a href="taipei.html">
+                                                <div><img src="assets/img/kaohsiung.png" style="width: 454px;height: 363px;margin: 0;"></div>
+                                                <div class="card-img-overlay d-md-flex justify-content-md-center" style="height: 363px;background: rgba(255,255,255,0);">
+                                                    <h1 class="order-first" style="margin: 0;width: 420px;color: var(--bs-white);font-size: 67px!important;text-align: center;padding: 114px 0px 0px;height: 333px;">KAOHSIUNG</h1>
+                                                </div>
+                                            </a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col d-md-flex d-xl-flex justify-content-md-center justify-content-xl-center">
-                                <div class="card">
-                                    <div><img class="d-xl-flex order-last" style="height: 363px;width: 454px;margin: 0;" src="assets/img/Screen%20Shot%202021-12-09%20at%2011.52.53%20PM.png"></div>
-                                    <div class="card-img-overlay d-xl-flex justify-content-xl-center" style="height: 363px;background: rgba(255,255,255,0);">
-                                        <h1 class="order-first" style="margin: 0;width: 420px;color: var(--bs-white);font-size: 67px!important;text-align: center;padding: 114px 0px 0px;height: 333px;">KAOHSIUNG</h1>
-                                    </div>
-                                </div>
+                        <div class="row" style="text-align: center;">
+                            <div class="col d-xl-flex justify-content-xl-center" style="height: 381px;">
+                                <div class="card" data-bss-hover-animate="pulse" style="border-style: hidden;"><a href="taipei.html">
+                                        <div><img class="order-last" style="height: 363px;width: 454px;margin: 0;" src="assets/img/hsinchu.png"></div>
+                                        <div class="card-img-overlay d-md-flex justify-content-md-center" style="height: 363px;background: rgba(255,255,255,0);">
+                                            <h1 class="order-first" style="margin: 0;width: 420px;color: var(--bs-white);font-size: 80px!important;text-align: center;padding: 111px 0px 0px;height: 333px;">HSINCHU</h1>
+                                        </div>
+                                    </a></div>
                             </div>
-                            <div class="col d-md-flex d-xl-flex justify-content-md-center justify-content-xl-center">
-                                <div class="card">
-                                    <div><img class="order-last" style="height: 363px;width: 454px;margin: 0;" src="assets/img/Screen%20Shot%202021-12-09%20at%2011.53.11%20PM.png"></div>
-                                    <div class="card-img-overlay d-xl-flex justify-content-xl-center" style="height: 363px;background: rgba(255,255,255,0);">
-                                        <h1 class="order-first" style="margin: 0;width: 420px;color: var(--bs-white);font-size: 77px!important;text-align: center;padding: 111px 0px 0px;height: 333px;">TAICHUNG</h1>
-                                    </div>
-                                </div>
+                            <div class="col" style="height: 381px;">
+                                <div class="card" data-bss-hover-animate="pulse" style="border-style: hidden;"><a href="taiwan.html">
+                                        <div><img src="assets/img/taiwan.png" style="width: 454px;height: 363px;"></div>
+                                        <div class="card-img-overlay d-md-flex d-xl-flex justify-content-md-center justify-content-xl-center" style="height: 363px;background: rgba(255,255,255,0);border-style: hidden;">
+                                            <h1 class="order-first" style="margin: 0;width: 420px;color: var(--bs-white);font-size: 80px!important;text-align: center;padding: 111px 0px 0px;height: 333px;border-style: hidden;">TAIWAN</h1>
+                                        </div>
+                                    </a></div>
                             </div>
                         </div>
-                        <div class="row" style="margin: 0px 0px 50px;"></div>
                     </div>
                 </div>
             </div>
@@ -100,18 +134,41 @@
             <header></header>
         </div>
         <div class="col">
-            <div class="row" style="height: 217px;"></div>
+            <div class="row" style="height: 114px;">
+                <div class="col">
+                    <h1 style="text-align: center;margin: 36px;font-size: 54.88px;"><strong>How was this done?</strong></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img class="img-fluid" src="assets/img/method_img.png"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p style="text-align: justify;padding: 0px 50px;">These stories were created through the process of extracting data, visualization, the analysis of the data and case studies. Data was mainly extracted from open-source database that contains seismometer waveforms, technology company’s mobility trackers, and government reports. Visualization of the data was performed using Tableau and MapboxAPI and Python packages. The stories were then drafted according to the data and case studies of the specific location was researched based on the local events. For more information, please check out the “Methods” section of the website by clicking the “Read more” button below.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col align-self-center"><a class="btn btn-primary text-center border rounded-pill" role="button" style="text-align: center;margin: 0px 100px;width: 146px;color: var(--bs-body-bg);background: #292161;" href="method.html">Read More</a></div>
+                <div class="col"></div>
+            </div>
         </div>
-    </div>
-    <div class="container">
         <div class="col">
-            <header></header>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-        </div>
-        <div class="col">
-            <div class="row" style="height: 217px;"></div>
+            <div class="row" style="height: 114px;">
+                <div class="col">
+                    <h1 style="text-align: center;margin: 36px;font-size: 54.88px;">About this Project<br></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p style="text-align: justify;padding: 0px 50px;">During the 2020 COVID-19 pandemic, the world had faced numerous new challenges and adapted to new lifestyles. However, new possibilities and technologies also thrived under the unforeseen circumstances. The purpose of this project is to document the course of the COVID-19 pandemic in the island nation of Taiwan. Due to strict quarantine measures and border lockdowns, Taiwan was late to enforce “lockdowns” around the island. Nevertheless, when the virus broke through its barriers, lockdown measures were quickly enacted, leading to a drop in human mobility in a matters of days. To illustrate this process, this project used different data from technology companies to seismological data in order to paint the impact from COVID-19 using various lines of evidence. For more information, please check out the “about” section of the website by clicking the “read more” button below.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col text-center align-self-center"><a class="btn btn-primary text-center border rounded-pill" role="button" style="text-align: center;margin: 0px 100px;width: 146px;color: var(--bs-body-bg);background: #292161;" href="about.html">Read More</a></div>
+                <div class="col"></div>
+            </div>
         </div>
     </div>
     <footer>
@@ -121,7 +178,7 @@
                     <ul class="list-inline text-center">
                         <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></li>
                         <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></li>
-                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></li>
+                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse" style="border-color: #292161;"></i></span></li>
                     </ul>
                     <p class="text-muted copyright">Copyright&nbsp;©&nbsp;Enjui Chang 2021</p>
                 </div>
@@ -129,6 +186,7 @@
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/clean-blog.js"></script>
     <script src="assets/js/Lightbox-Gallery.js"></script>
