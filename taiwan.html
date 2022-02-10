@@ -18,12 +18,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zilla+Slab&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
-    <link rel="stylesheet" href="assets/css/Map-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
-    <link rel="stylesheet" href="assets/css/untitled-1.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/timeline.compiled.css">
 </head>
 
 <body>
@@ -50,34 +46,162 @@
         </div>
     </header>
     <article>
-        <div class="container" style="margin: 0px 16px 100px;">
+        <div class="container">
             <div class="row" style="margin: 0px -150px;padding: 0px;">
-                <div class="col-md-10 col-lg-8 mx-auto" style="margin: 0px -100px;padding: 0px;">
+                <div class="col-md-10 col-lg-8 text-start mx-auto" style="margin: 0px -100px;padding: 0px;">
                     <h1 class="text-center">Overview</h1>
                 </div>
             </div>
+            <div class="row" style="margin: 0px 0px;padding: 0px;">
+                <div class="col">
+                    <h1 class="text-center h4">Description</h1>
+                    <p>Located on the southeast of Asia, Taiwan is an island approximately 150 km away from China across the Taiwan Strait. After the economic boom in the late 20th century, the island nation is now the center of the semiconductor supply chain as well as numerous tech products, including computers and other hardwares.<br></p>
+                    <p>The location of Taiwan sets up the strategic importance in global powers’ military projections as well as the global economy. With the Port of Kaohsiung and the Taoyuan International Airport both being one of the busiest cargo hubs in the world, the location supports numerous cargo companies in the world. In addition, situated in the first island chain, both China and the USA consider Taiwan of critical importance for projecting their influences in the East Asia region. Not to mention the complex history and political situation that would impact the world community.</p>
+                </div>
+                <div class="col text-center">
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/description_taiwan.png">
+                        <figcaption class="figure-caption">Caption</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row" style="margin: 0px 0px;padding: 0px;">
+                <div class="col">
+                    <h1 class="text-center h4">Population</h1>
+                    <p>The population of Taiwan is approximately 23 million in a land area of 3,6000 squared kilometers. With the population density around 600 per squared kilometers, Taiwan is one of the most densely populated countries in the world, trailing behind city states and bangladesh. However, over two-thirds of the island is mountainous, resulting in the population densely populated in cities along the western plains and Taipei basin in the north.</p>
+                    <p>Out of the population centers in Taiwan, the most notable is the Greater Taipei Metropolitan area, with over 7 million inhabitants. To the south is the rolling hills of Hsinchu, this area is dubbed the “Silicon Valley of Taiwan” with the highest intensity of tech companies located in this area including largest semiconductor foundry, TSMC. The southern city of Kaohsiung has the largest port in the country with a robust heavy and shipping industry. Combined with the central city of Taichung, these metropolitans make up over half of the island population.</p>
+                </div>
+                <div class="col text-center">
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/pop-taiwan.png">
+                        <figcaption class="figure-caption">Caption</figcaption>
+                    </figure>
+                </div>
+            </div>
             <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
+                <div class="col">
+                    <h1 class="text-center h4">COVID-19</h1>
+                    <p>At the horizon of the global pandemic during 2020, the stricted border control and quarantine policy result in less than 1,000 cases throughout the year. This came to the end with the emerging cases during mid 2021 when relaxed quarantine measures for the airline industry and decreased awareness among the citizens resulted in a boom of infection centered in the Taipei Basin. </p>
+                    <p>This forced the government to enacted a partial lockdown called the “third-level alert” throughout May and June, where measures, such as the closure of schools and businesses and restriction in means of transportation, were enforced. Most schools and companies resorted to remote option, however, there was never a mandatory order to stay-at-home.</p>
+                    <p>Increased testing and proper quarantine policies were enacted after the outbreak leading to the stabilization of the local cases at the end of June. However, reduced mobility of the population were observed until later in August. </p>
+                </div>
+                <div class="col text-center">
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/covid-taiwan.png">
+                        <figcaption class="figure-caption">Caption</figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
         <div class="container">
             <div class="row" style="margin: 0px -150px;padding: 0px;">
-                <div class="col-md-10 col-lg-8 mx-auto" style="margin: 0px -100px;padding: 0px;">
+                <div class="col-md-10 col-lg-8 text-start mx-auto" style="margin: 0px -100px;padding: 0px;">
                     <h1 class="text-center">Timeline</h1>
                 </div>
             </div>
+            <div class="row text-start">
+                <div class="col text-start">
+                    <div><!-- THE CHALLENGE: -->
+<!-- 1. recreate version 3 (https://codepen.io/cjl750/pen/mXbMyo) with no javascript whatsoever
+     2. make code as abstract as possible (e.g., trying to calc positions that would work with any number of dots instead of hard-coding the container width as we do in our media queries)
+     3. highest browser support possible -->
+<!-- Bonus points: turn v3's pseudo content into actual element content, so it's accessible to screen readers, search engines, etc. -->
+
+<h3>Calm Before the Storm: Pre-Lockdown</h3>
+<div class="flex-parent">
+	<div class="input-flex-container">
+		<input type="radio" name="timeline-dot" data-description="12-31-19">
+		<div class="dot-info" data-description="12-31-19">
+			<span class="year">Dec/19</span>
+			<span class="label">Started Screening</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1-20-20">
+		<div class="dot-info" data-description="1-20-20">
+			<span class="year">Jan/20</span>
+			<span class="label">CECC Activation</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="1-21-20" checked>
+		<div class="dot-info" data-description="1-21-20">
+			<span class="year">Jan/20</span>
+			<span class="label">First Case</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="2-5-20">
+		<div class="dot-info" data-description="2-5-20">
+			<span class="year">Feb/20</span>
+			<span class="label">Rationing of Masks</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="2-6-20">
+		<div class="dot-info" data-description="2-6-20">
+			<span class="year">Feb/20</span>
+			<span class="label">Mask Map</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="3-11-20">
+		<div class="dot-info" data-description="3-11-20">
+			<span class="year">Mar/20</span>
+			<span class="label">WHO Declares Pandemic</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="9-8-20">
+		<div class="dot-info" data-description="9-8-20">
+			<span class="year">Sep/20</span>
+			<span class="label">Vaccine Approved</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="10-20">
+		<div class="dot-info" data-description="10-20">
+			<span class="year">Oct/20</span>
+			<span class="label">Delta Variant</span>
+		</div>
+		<div id="timeline-descriptions-wrapper">
+			<p data-description="12-31-19">12/31: Started screening on airplanes from China</p>
+			<p data-description="1-20-20">1/20: Activation of interministry CECC</p>
+			<p data-description="1-21-20">1/21: First case detected in Taiwan</p>
+			<p data-description="2-5-20">2/5: Rationing of masks in Taiwan</p>
+			<p data-description="2-6-20">2/6: Launch of “mask availability map”</p>
+			<p data-description="3-11-20">3/11: WHO declares pandemic</p>
+			<p data-description="9-8-20">9/8: Approved use of Pfizer-BioNTech Vaccine in the USA</p>
+			<p data-description="10-20">Detection of the Delta Variant in India</p>
+		</div>
+	</div>
+</div>
+
+
+<div style="position: absolute; bottom: 15px; right: 10px; font-size: 12px">
+	<a href="https://codepen.io/cjl750/pen/mXbMyo" target="_blank">based off of version 3</a></div></div>
+                    <h1 class="text-center h4">A Storm Brewing</h1>
+                    <p class="text-start">On 31 December 2019, rumors about an unidentified outbreak in Wuhan, China spurred the Centers for Disease Control (CDC) of Taiwan to start screening passengers from inbound flights from Wuhan.</p>
+                    <p class="text-start">On 20 January 2020, the international circumstances initiated the activation of the Central Epidemic Command Center (CECC) under the CDC, which is an interministry agency established after the devastating SARS (Severe Acute Respiratory Syndrome) epidemic in 2003.<br><br>On January 21, the first case was confirmed in Taiwan, who was a 50-year-old woman that taught in Wuhan, China.</p>
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/airline-map_taiwan.png">
+                        <figcaption class="figure-caption text-center">Airline Map from Taiwan.</figcaption>
+                    </figure>
+                    <p>The first major challenge comes from the high connectivity between the Taiwan and China. Due to the proximity and the economic connection between Taiwan and China, Taiwan has one of the highest flight connectivity with China, creating a perfect channel for virus to spread.</p>
+                    <p>To make things worst, the one of the globe’s largest migration, Lunar New Year, was around the corner. This results in the movement of many Taiwanese in China back to Taiwan, possibly bring back the virus on the way. In addition, a large movement is also observed in Taiwan domestically, increasing the risk of a nationwide epidemic. This ultimately lead to the prediction from John Hopskin University that Taiwan would be the one of the hardest hit countries by COVID-19. </p>
+                    <h1 class="text-center h4">Successful Quarantine?</h1>
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/taiwan-mobile_infra.png">
+                        <figcaption class="figure-caption text-center">Mobile Infrastructure of Taiwan</figcaption>
+                    </figure>
+                    <p>To combat this disadvantage, the CECC started to implement 14-day quarantine procedure for arrivals from China, which later became for any individual arriving outside the island, including citizens. </p>
+                    <p>People can decide if they want to live in a government accomodation, a quarantine hotel, or home isolation. To ensure an effective quarantine, people are requried to provide their phone number to the local authorities. This phone device was electronic monitoring device that was tracked using the signals of their mobile phone to determine whether they leave the range of their home. The data was then deleted from the government database by law after the quarantine period. Although legally legitimate, some citizens expressed concerns on the similicity of obtaining the geolocation of each individual only via their mobile phones.</p>
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/taiwan-mask_map.png">
+                        <figcaption class="figure-caption text-center">Real-time Mask Map</figcaption>
+                    </figure>
+                    <p>In addition, the shortage of masks resulted in the rationing of mask in the beginning of the pandemic. This promopted citizens to create a “mask availability map” to help citiznes cope with the insufficient map availability throughout the country. To solve thethe government worked along with local mask suppliers to increase the mask supply in light of the initial shortage. </p>
+                    <p>To solve the government worked along with local mask suppliers to increase the mask supply in light of the initial shortage. For the rest of 2020, the mask distribution gradually stabilized and enable “mask diplomacy” for Taiwan by donating masks to hardest hit regions around the world.</p>
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/taiwan-covid_case_early.png">
+                        <figcaption class="figure-caption text-center">Covid-19 Case Before Jan 1, 2021.</figcaption>
+                    </figure>
+                    <h1 class="text-center h4">Optimal Condition</h1>
+                    <p>Throughout the rest of 2020 to the start of 2021, Taiwan experienced no major outbreak, with only minor clusters that were quickly traced and quarantined. This prompts relaxation in the quarantine measures for airline workers by the CECC, reducing the time in self-isolation from 7 days to 3 days. Furthermore, due to the long pause of major outbreak, local citizens started to relax in COVID-19 prevention measures, including face masks and social distancing.</p>
+                    <p>For the rest of the world, this is also the time where the delta variant emerged from India as well as the first vaccine was developed.</p>
+                    <h1 class="text-center h4">Starting point</h1>
+                    <p>The identification of a cluster of cases in the Wanhua area in Taipei initalized the outbreak.</p>
+                    <p>Paragraph</p>
+                    <p>Paragraph</p>
+                </div>
+            </div>
             <div class="row">
-                <div class="col" style="padding: 0px 60px;"></div>
-                <div class="col" style="width: 160px;margin: 0px -60px;"></div>
-                <div class="col align-self-center" style="padding: 0px 60px;width: 160px;">
-                    <h1 class="text-start" style="font-size: 21px;">Mobility Change</h1><div class='tableauPlaceholder' id='viz1643442961614' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 - August 15, 2021 ' src='DR&#47;DRF5TCTZ3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;DRF5TCTZ3' /> <param name='toolbar' value='yes' /><param name='static_image' value='DR&#47;DRF5TCTZ3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1643442961614');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div class="col text-center align-self-center" style="padding: 0px 60px;width: 160px;">
+                    <h1 class="text-center" style="font-size: 21px;">Mobility Change</h1><div class='tableauPlaceholder' id='viz1643442961614' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 - August 15, 2021 ' src='DR&#47;DRF5TCTZ3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;DRF5TCTZ3' /> <param name='toolbar' value='yes' /><param name='static_image' value='DR&#47;DRF5TCTZ3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1643442961614');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                 </div>
             </div>
         </div>
     </article>
-    <div class="row"></div>
-    <footer>
+    <footer class="timeline-container timeline-theme-1">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
@@ -93,9 +217,6 @@
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="assets/js/clean-blog.js"></script>
-    <script src="assets/js/Lightbox-Gallery.js"></script>
 </body>
 
 </html>
