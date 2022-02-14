@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zilla+Slab&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/timeline.compiled.css">
 </head>
 
@@ -97,14 +96,8 @@
                 </div>
             </div>
             <div class="row text-start">
-                <div class="col text-start">
-                    <div><!-- THE CHALLENGE: -->
-<!-- 1. recreate version 3 (https://codepen.io/cjl750/pen/mXbMyo) with no javascript whatsoever
-     2. make code as abstract as possible (e.g., trying to calc positions that would work with any number of dots instead of hard-coding the container width as we do in our media queries)
-     3. highest browser support possible -->
-<!-- Bonus points: turn v3's pseudo content into actual element content, so it's accessible to screen readers, search engines, etc. -->
-
-<h3>Calm Before the Storm: Pre-Lockdown</h3>
+                <div class="col text-center">
+                    <div><h3>Calm Before the Storm: Pre-Lockdown</h3>
 <div class="flex-parent">
 	<div class="input-flex-container">
 		<input type="radio" name="timeline-dot" data-description="12-31-19">
@@ -147,6 +140,16 @@
 			<span class="year">Oct/20</span>
 			<span class="label">Delta Variant</span>
 		</div>
+		<input type="radio" name="timeline-dot" data-description="10-20">
+		<div class="dot-info" data-description="3-1-21">
+			<span class="year">Mar/21</span>
+			<span class="label">Relax Entry Guidelines</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="10-20">
+		<div class="dot-info" data-description="4-27-21">
+			<span class="year">Apr/21</span>
+			<span class="label">Airline Staff Cases</span>
+		</div>
 		<div id="timeline-descriptions-wrapper">
 			<p data-description="12-31-19">12/31: Started screening on airplanes from China</p>
 			<p data-description="1-20-20">1/20: Activation of interministry CECC</p>
@@ -156,6 +159,8 @@
 			<p data-description="3-11-20">3/11: WHO declares pandemic</p>
 			<p data-description="9-8-20">9/8: Approved use of Pfizer-BioNTech Vaccine in the USA</p>
 			<p data-description="10-20">Detection of the Delta Variant in India</p>
+            <p data-description="3-1-21">3/1: Relaxation of entry guidelines for business visas and airline personnel</p>
+            <p data-description="4-27-21">4/27: Numerous local cases surrounding airline staffs appear</p>
 		</div>
 	</div>
 </div>
@@ -166,30 +171,101 @@
                     <h1 class="text-center h4">A Storm Brewing</h1>
                     <p class="text-start">On 31 December 2019, rumors about an unidentified outbreak in Wuhan, China spurred the Centers for Disease Control (CDC) of Taiwan to start screening passengers from inbound flights from Wuhan.</p>
                     <p class="text-start">On 20 January 2020, the international circumstances initiated the activation of the Central Epidemic Command Center (CECC) under the CDC, which is an interministry agency established after the devastating SARS (Severe Acute Respiratory Syndrome) epidemic in 2003.<br><br>On January 21, the first case was confirmed in Taiwan, who was a 50-year-old woman that taught in Wuhan, China.</p>
-                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/airline-map_taiwan.png">
+                    <figure class="figure text-center"><img class="img-fluid figure-img" src="assets/img/airline-map_taiwan.png">
                         <figcaption class="figure-caption text-center">Airline Map from Taiwan.</figcaption>
                     </figure>
-                    <p>The first major challenge comes from the high connectivity between the Taiwan and China. Due to the proximity and the economic connection between Taiwan and China, Taiwan has one of the highest flight connectivity with China, creating a perfect channel for virus to spread.</p>
-                    <p>To make things worst, the one of the globe’s largest migration, Lunar New Year, was around the corner. This results in the movement of many Taiwanese in China back to Taiwan, possibly bring back the virus on the way. In addition, a large movement is also observed in Taiwan domestically, increasing the risk of a nationwide epidemic. This ultimately lead to the prediction from John Hopskin University that Taiwan would be the one of the hardest hit countries by COVID-19. </p>
+                    <p class="text-start">The first major challenge comes from the high connectivity between the Taiwan and China. Due to the proximity and the economic connection between Taiwan and China, Taiwan has one of the highest flight connectivity with China, creating a perfect channel for virus to spread.</p>
+                    <p class="text-start">To make things worst, the one of the globe’s largest migration, Lunar New Year, was around the corner. This results in the movement of many Taiwanese in China back to Taiwan, possibly bring back the virus on the way. In addition, a large movement is also observed in Taiwan domestically, increasing the risk of a nationwide epidemic. This ultimately lead to the prediction from John Hopskin University that Taiwan would be the one of the hardest hit countries by COVID-19. </p>
                     <h1 class="text-center h4">Successful Quarantine?</h1>
                     <figure class="figure"><img class="img-fluid figure-img" src="assets/img/taiwan-mobile_infra.png">
                         <figcaption class="figure-caption text-center">Mobile Infrastructure of Taiwan</figcaption>
                     </figure>
-                    <p>To combat this disadvantage, the CECC started to implement 14-day quarantine procedure for arrivals from China, which later became for any individual arriving outside the island, including citizens. </p>
-                    <p>People can decide if they want to live in a government accomodation, a quarantine hotel, or home isolation. To ensure an effective quarantine, people are requried to provide their phone number to the local authorities. This phone device was electronic monitoring device that was tracked using the signals of their mobile phone to determine whether they leave the range of their home. The data was then deleted from the government database by law after the quarantine period. Although legally legitimate, some citizens expressed concerns on the similicity of obtaining the geolocation of each individual only via their mobile phones.</p>
+                    <p class="text-start">To combat this disadvantage, the CECC started to implement 14-day quarantine procedure for arrivals from China, which later became for any individual arriving outside the island, including citizens. </p>
+                    <p class="text-start">People can decide if they want to live in a government accomodation, a quarantine hotel, or home isolation. To ensure an effective quarantine, people are requried to provide their phone number to the local authorities. This phone device was electronic monitoring device that was tracked using the signals of their mobile phone to determine whether they leave the range of their home. The data was then deleted from the government database by law after the quarantine period. Although legally legitimate, some citizens expressed concerns on the similicity of obtaining the geolocation of each individual only via their mobile phones.</p>
                     <figure class="figure"><img class="img-fluid figure-img" src="assets/img/taiwan-mask_map.png">
                         <figcaption class="figure-caption text-center">Real-time Mask Map</figcaption>
                     </figure>
-                    <p>In addition, the shortage of masks resulted in the rationing of mask in the beginning of the pandemic. This promopted citizens to create a “mask availability map” to help citiznes cope with the insufficient map availability throughout the country. To solve thethe government worked along with local mask suppliers to increase the mask supply in light of the initial shortage. </p>
-                    <p>To solve the government worked along with local mask suppliers to increase the mask supply in light of the initial shortage. For the rest of 2020, the mask distribution gradually stabilized and enable “mask diplomacy” for Taiwan by donating masks to hardest hit regions around the world.</p>
+                    <p class="text-start">In addition, the shortage of masks resulted in the rationing of mask in the beginning of the pandemic. This promopted citizens to create a “mask availability map” to help citiznes cope with the insufficient map availability throughout the country. To solve thethe government worked along with local mask suppliers to increase the mask supply in light of the initial shortage. </p>
+                    <p class="text-start">To solve the government worked along with local mask suppliers to increase the mask supply in light of the initial shortage. For the rest of 2020, the mask distribution gradually stabilized and enable “mask diplomacy” for Taiwan by donating masks to hardest hit regions around the world.</p>
                     <figure class="figure"><img class="img-fluid figure-img" src="assets/img/taiwan-covid_case_early.png">
                         <figcaption class="figure-caption text-center">Covid-19 Case Before Jan 1, 2021.</figcaption>
                     </figure>
                     <h1 class="text-center h4">Optimal Condition</h1>
-                    <p>Throughout the rest of 2020 to the start of 2021, Taiwan experienced no major outbreak, with only minor clusters that were quickly traced and quarantined. This prompts relaxation in the quarantine measures for airline workers by the CECC, reducing the time in self-isolation from 7 days to 3 days. Furthermore, due to the long pause of major outbreak, local citizens started to relax in COVID-19 prevention measures, including face masks and social distancing.</p>
-                    <p>For the rest of the world, this is also the time where the delta variant emerged from India as well as the first vaccine was developed.</p>
+                    <p class="text-start">Throughout the rest of 2020 to the start of 2021, Taiwan experienced no major outbreak, with only minor clusters that were quickly traced and quarantined. This prompts relaxation in the quarantine measures for airline workers by the CECC, reducing the time in self-isolation from 7 days to 3 days. Furthermore, due to the long pause of major outbreak, local citizens started to relax in COVID-19 prevention measures, including face masks and social distancing.</p>
+                    <p class="text-start">For the rest of the world, this is also the time where the delta variant emerged from India as well as the first vaccine was developed.</p>
+                    <div><h3>Fast and Furious: Lockdown</h3>
+<div class="flex-parent">
+	<div class="input-flex-container">
+		<input type="radio" name="timeline-dot" data-description="5-12-21">
+		<div class="dot-info" data-description="5-12-21">
+			<span class="year">May/21</span>
+			<span class="label">Taiwan Warning Level 2</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="5-15-21">
+		<div class="dot-info" data-description="5-15-21">
+			<span class="year">May/21</span>
+			<span class="label">Taipei Warning Level 3</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="5-19-21" checked>
+		<div class="dot-info" data-description="5-19-21">
+			<span class="year">May/21</span>
+			<span class="label">Taiwan Warning Level 3</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="5-22-21">
+		<div class="dot-info" data-description="5-22-21">
+			<span class="year">May/21</span>
+			<span class="label">Retroactive Cases</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="6-6-21">
+		<div class="dot-info" data-description="6-6-21">
+			<span class="year">Jun/21</span>
+			<span class="label">10,000 Cases</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="6-17-21">
+		<div class="dot-info" data-description="6-17-21">
+			<span class="year">Jun/21</span>
+			<span class="label">500 Deaths</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="7-13-21">
+		<div class="dot-info" data-description="7-13-21">
+			<span class="year">Jul/21</span>
+			<span class="label">Relax Lockdown Measures</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="7-27-21">
+		<div class="dot-info" data-description="7-27-21">
+			<span class="year">Jul/21</span>
+			<span class="label">Warning Level 2</span>
+        </div>
+		<input type="radio" name="timeline-dot" data-description="8-25-21">
+		<div class="dot-info" data-description="8-25-21">
+			<span class="year">Aug/21</span>
+			<span class="label">Zero Cases</span>
+		</div>
+		<input type="radio" name="timeline-dot" data-description="9-15-21">
+		<div class="dot-info" data-description="9-15-21">
+			<span class="year">Sep/21</span>
+			<span class="label">Delta Variant Enters</span>
+		</div>
+		<div id="timeline-descriptions-wrapper">
+			<p data-description="5-12-21">5/12: Warning level raised to level 2 after a cluster of unknown origin cases emerge</p>
+			<p data-description="5-15-21">5/15: Warning level around Taipei City is raised to level 3 initiating lockdown in the region</p>
+			<p data-description="5-19-21">5/19: Warning level is raised to level 3 all over Taiwan initiating a nation-wide lockdown</p>
+			<p data-description="5-22-21">5/22: Retroactive cases were identified due to backlog in testing</p>
+			<p data-description="6-6-21">6/6: Official case counts reaches 10,000 cases</p>
+			<p data-description="6-17-21">6/17: Official death count reaches 500 deaths</p>
+			<p data-description="7-13-21">7/13: Relaxation of lockdown measures but still maintaining the same warning level</p>
+			<p data-description="7-27-21">7/27: Warning level was relaxed to level 2 for Taiwan ending most lockdown measures</p>
+            <p data-description="8-25-21">8/25: No cases was reported for the first time since the lockdown measures</p>
+            <p data-description="9-15-21">9/15: Delta Variant appears in local cases in Taipei</p>
+		</div>
+	</div>
+</div>
+
+
+<div style="position: absolute; bottom: 15px; right: 10px; font-size: 12px">
+	<a href="https://codepen.io/cjl750/pen/mXbMyo" target="_blank">based off of version 3</a></div></div>
                     <h1 class="text-center h4">Starting point</h1>
-                    <p>The identification of a cluster of cases in the Wanhua area in Taipei initalized the outbreak.</p>
+                    <p>The identification of a cluster of cases in the Wanhua area in Taipei initiated the outbreak. Due to</p>
                     <p>Paragraph</p>
                     <p>Paragraph</p>
                 </div>

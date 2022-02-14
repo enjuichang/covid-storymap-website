@@ -4,9 +4,6 @@ html {
 
 body {
   min-height: 100%;
-}
-
-body {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   color: #424949;
@@ -20,10 +17,6 @@ h3 {
   text-align: center;
   height: 38px;
   margin: 30px 0;
-}
-
-h1 span {
-  white-space: nowrap;
 }
 
 .flex-parent {
@@ -86,6 +79,18 @@ input::after {
   right: calc(-4vw + 12.5px);
 }
 
+input:hover {
+  background-color: #2C3E50;
+}
+
+input:hover::before {
+  background-color: #2C3E50;
+}
+
+input:hover::after {
+  background-color: #AEB6BF;
+}
+
 input:checked {
   background-color: #2C3E50;
 }
@@ -98,8 +103,13 @@ input:checked::after {
   background-color: #AEB6BF;
 }
 
-input:checked ~ input, input:checked ~ input::before, input:checked ~ input::after {
+input:checked ~ input, input:checked ~ input::before, input:checked ~ input::after, input:hover ~ input, input:hover ~ input::before, input:hover ~ input::after {
   background-color: #AEB6BF;
+}
+
+input:hover + .dot-info span {
+  font-size: 13px;
+  font-weight: bold;
 }
 
 input:checked + .dot-info span {
@@ -150,35 +160,79 @@ input:checked + .dot-info span {
   display: none;
 }
 
-input[data-description="12-31-19"]:checked ~ #timeline-descriptions-wrapper p[data-description="12-31-19"] {
+input[data-description="12-31-19"]:hover ~ #timeline-descriptions-wrapper p[data-description="12-31-19"] {
   display: block;
 }
 
-input[data-description="1-20-20"]:checked ~ #timeline-descriptions-wrapper p[data-description="1-20-20"] {
+input[data-description="1-20-20"]:hover ~ #timeline-descriptions-wrapper p[data-description="1-20-20"] {
   display: block;
 }
 
-input[data-description="1-21-20"]:checked ~ #timeline-descriptions-wrapper p[data-description="1-21-20"] {
+input[data-description="1-21-20"]:hover ~ #timeline-descriptions-wrapper p[data-description="1-21-20"] {
   display: block;
 }
 
-input[data-description="2-5-20"]:checked ~ #timeline-descriptions-wrapper p[data-description="2-5-20"] {
+input[data-description="2-5-20"]:hover ~ #timeline-descriptions-wrapper p[data-description="2-5-20"] {
   display: block;
 }
 
-input[data-description="2-6-20"]:checked ~ #timeline-descriptions-wrapper p[data-description="2-6-20"] {
+input[data-description="2-6-20"]:hover ~ #timeline-descriptions-wrapper p[data-description="2-6-20"] {
   display: block;
 }
 
-input[data-description="3-11-20"]:checked ~ #timeline-descriptions-wrapper p[data-description="3-11-20"] {
+input[data-description="3-11-20"]:hover ~ #timeline-descriptions-wrapper p[data-description="3-11-20"] {
   display: block;
 }
 
-input[data-description="9-8-20"]:checked ~ #timeline-descriptions-wrapper p[data-description="9-8-20"] {
+input[data-description="9-8-20"]:hover ~ #timeline-descriptions-wrapper p[data-description="9-8-20"] {
   display: block;
 }
 
-input[data-description="10-20"]:checked ~ #timeline-descriptions-wrapper p[data-description="10-20"] {
+input[data-description="3-1-21"]:hover ~ #timeline-descriptions-wrapper p[data-description="3-1-21"] {
+  display: block;
+}
+
+input[data-description="4-27-21"]:hover ~ #timeline-descriptions-wrapper p[data-description="4-27-21"] {
+  display: block;
+}
+
+input[data-description="5-12-21"]:hover ~ #timeline-descriptions-wrapper p[data-description="5-12-21"] {
+  display: block;
+}
+
+input[data-description="5-15-21"]:hover ~ #timeline-descriptions-wrapper p[data-description="5-15-21"] {
+  display: block;
+}
+
+input[data-description="5-19-21"]:hover ~ #timeline-descriptions-wrapper p[data-description="5-19-21"] {
+  display: block;
+}
+
+input[data-description="5-22-21"]:hover ~ #timeline-descriptions-wrapper p[data-description="5-22-21"] {
+  display: block;
+}
+
+input[data-description="6-6-21"]:hover ~ #timeline-descriptions-wrapper p[data-description="6-6-21"] {
+  display: block;
+}
+
+input[data-description="6-17-21"]:hover ~ #timeline-descriptions-wrapper p[data-description="6-17-21"] {
+  display: block;
+}
+
+input[data-description="7-13-21"]:hover ~ #timeline-descriptions-wrapper p[data-description="7-13-21"] {
+  display: block;
+}
+
+input[data-description="7-27-21"]:hover ~ #timeline-descriptions-wrapper p[data-description="7-27-21"] {
+  display: block;
+}
+
+input[data-description="8-25-21"]:hover ~ #timeline-descriptions-wrapper p[data-description="8-25-21"] {
+  display: block;
+}
+
+input[data-description="9-15-21"]:hover ~ #timeline-descriptions-wrapper p[data-description="9-15-21"] {
   display: block;
 }
 
@@ -233,6 +287,18 @@ input[data-description="10-20"]:checked ~ #timeline-descriptions-wrapper p[data-
     content: none;
   }
 
+  input:hover + .dot-info {
+    background-color: #2C3E50;
+  }
+
+  input:hover + .dot-info span.year {
+    font-size: 14px;
+  }
+
+  input:hover + .dot-info span.label {
+    font-size: 12px;
+  }
+
   input:checked + .dot-info {
     background-color: #2C3E50;
   }
@@ -268,7 +334,7 @@ input[data-description="10-20"]:checked ~ #timeline-descriptions-wrapper p[data-
 
   .dot-info span.label {
     top: calc(100% + 5px);
-    left: 50%;
+    left: 100%;
     transform: translateX(-50%);
     text-indent: 0;
     text-align: center;
