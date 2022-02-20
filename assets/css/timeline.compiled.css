@@ -188,6 +188,10 @@ input[data-description="9-8-20"]:hover ~ #timeline-descriptions-wrapper p[data-d
   display: block;
 }
 
+input[data-description="10-20"]:hover ~ #timeline-descriptions-wrapper p[data-description="10-20"] {
+  display: block;
+}
+
 input[data-description="3-1-21"]:hover ~ #timeline-descriptions-wrapper p[data-description="3-1-21"] {
   display: block;
 }

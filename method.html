@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Contact us - Brand</title>
+    <title>Methods - COVID-19 Story Maps</title>
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
@@ -50,22 +50,22 @@
                     <h1 class="text-center">Data Collection</h1>
                     <p class="text-start">Data collection is a pipeline including the identification of the data, the collection, and the preprocessing into a state that is usable for analysis. In this project, four main types of data were collected, including COVID cases, seismic noise mobility, transit statistics, and mobility index.</p>
                     <h1 class="h4">COVID cases</h1>
-                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/methods-covid_dashboard.png">
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/methods-covid_dashboard.png" width="800px">
                         <figcaption class="figure-caption text-center">NHCH COVID-19 Dashboard.</figcaption>
                     </figure>
                     <p class="text-start">The COVID cases data were collected from the <a href="https://github.com/CSSEGISandData/COVID-19">JHU CSSE COVID-19 Dataset</a>&nbsp;and <a href="https://covid-19.nchc.org.tw/index.php">NCHC COVID-19 Dashboard</a>&nbsp;in the format of CSV (<em>comma-separated values</em>) files. Specifically, <em>time_series_covid19_confirmed_global.csv</em>&nbsp;in the JHU database was used as this file contains the COVID-19 cases per country data over the time frame from Jan 22, 2020 to the present date for the entirety of Taiwan and each city's COVID cases were extracted from the City/Town COVID-19 Daily Cases page in the NHCH dashboard.&nbsp;</p>
                     <h1 class="h4">Seismic Noise Mobility</h1>
-                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/TAP_spectogram_avg_1_daylight_evtlst_191201_210815.png">
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/TAP_spectogram_avg_1_daylight_evtlst_191201_210815.png" width="800px">
                         <figcaption class="figure-caption text-center">Seismic noise magnitude across frequency bands for Taipei station (TAP)</figcaption>
                     </figure>
                     <p class="text-start">Seismic noise mobility uses raw seismic data from seismometers. These files are collected from the&nbsp;<a href="https://gdmsn.cwb.gov.tw/index.php">GDMS</a>&nbsp;database operated by the Central Weather Bureau of Taiwan in the format of miniSEED files, a standard format in seismology that stores relevant information on seismic waves. This website contains an open database consisted of three seismographic networks in Taiwan. Out of the three different networks, the Central Weather Bureau Seismographic Network (CWBSN) was used as it has the most complete instruments out of the three networls.</p>
                     <h1 class="h4">Transit Statistics</h1>
-                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/method-taiwan_transit.jpeg">
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/method-taiwan_transit.jpeg" width="800px">
                         <figcaption class="figure-caption text-center">Public Transportation Network Map of Taiwan. Retrieved from <a href="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/166770134_298449488311705_6108670379444418342_n.jpg?_nc_cat=101&amp;ccb=1-5&amp;_nc_sid=730e14&amp;_nc_ohc=Rem81wSvKyAAX-ltGhL&amp;_nc_oc=AQn31M1ZTo3bc68DD0kSMxmzek69mT53ZvFV8sPjsVF6YFWIur7DgTR4OBS47TXFo0I&amp;_nc_ht=scontent-tpe1-1.xx&amp;oh=00_AT8KyCNmvQFq6JBQGCwOtxabar-EhQ97LkdY1MTucNR00w&amp;oe=622F5E18">Exit No.0</a></figcaption>
                     </figure>
                     <p class="text-start">Transit statistics include Taiwan High Speed Rail (HSR), Taiwan Railway, Taipei Metro, Kaohsiung Metro, and Taichung Metro. Each dataset is downloaded or copied directly from their websites or from the&nbsp;<a href="https://data.gov.tw/en">National Open Data website</a>. Due to the difference in temporal resolution among the datasets, monthly records were used for Taiwan HSR, Taiwan Railway, Kaohsiung Metro, while daily records were used for Taipei Metro and Taichung Metro.</p>
                     <h1 class="h4">Mobility index</h1>
-                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/method-apple_mobility.png">
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/method-apple_mobility.png" width="800px">
                         <figcaption class="figure-caption text-center">Apple's Mobility Trends Reports. Retrieved from&nbsp;<a href="#">Apple Maps</a>.&nbsp;</figcaption>
                     </figure>
                     <p class="text-start">Mobility index refers to mobility trends report by Apple and Google. These two technological companies used map apps data to create a global mobility index. Google's&nbsp;<a href="https://www.google.com/covid19/mobility/">COVID-19 Community Mobility Reports</a>&nbsp;uses anonymized "<strong>location history</strong>" feature on Google Map to infer public mobility in terms of the walking, driving, and transiting. However, the spatial resolution for Taiwan is only to the degree of the entire country. Therefore, only one story map uses this data. On the other hand, Apple's&nbsp;<a href="https://covid19.apple.com/mobility">Mobility Trends Reports</a>&nbsp;uses Apple Map's "<strong>direction searches</strong>" to determine the movement of the public under lockdowns. The spatial resolution is at the city level, which is useful for more granular analyses with other records.</p>
@@ -88,7 +88,7 @@
                     <h1 class="text-center">Data Visualization</h1>
                     <p style="text-align: left;">After obtaining the seismic mobility records and other types of data, the visualization of the data was needed to present and interpret the data for the audience. In this project, the main tools I used was&nbsp;<strong>Tableau.</strong></p>
                     <h1 class="h4">Visualization Styles</h1>
-                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/methods-tableau.png">
+                    <figure class="figure"><img class="img-fluid figure-img" src="assets/img/methods-tableau.png" width="800px">
                         <figcaption class="figure-caption">Image of Tableau Interface. Retrieved from&nbsp;<a href="https://cdnl.tblsft.com/sites/default/files/pages/superstore_forecast_creator_server.png">Tableau</a>.</figcaption>
                     </figure>
                     <p style="text-align: left;"><a href="https://www.tableau.com/">Tableau</a>&nbsp;is a data visualization software that smartly configures the data for effective communication. This project uses Tableau in two ways according to the style of visualization. The first style is <strong>time series line</strong> plot. As mentioned in the <em>data analysis </em>section above, most of the data are analyzed using time series line plots since it is useful for comparing among data and is critical when pinpointing the specific changes as lockdown occurs. This was the case for the transit datasets and COVID cases data. The second style is a <strong>time series map</strong> visualization which includes geographical locations of stations or cities in order to depict the changes spatially along with time. This was used for the seismic noise index as it can show the difference chronologically and spatial across the island.&nbsp;In addition, <strong>Mapbox API </strong>was used to style the maps uniquely to provide responsiveness and better appearance.</p>
@@ -106,9 +106,9 @@
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
                     <ul class="list-inline text-center">
-                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></li>
-                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></li>
-                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse" style="border-color: #292161;"></i></span></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/7t_eric"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/enjui.chang.7t/"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/enjuichang"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse" style="border-color: #292161;"></i></span></a></li>
                     </ul>
                     <p class="text-muted copyright">Copyright&nbsp;©&nbsp;Enjui Chang 2021</p>
                 </div>
